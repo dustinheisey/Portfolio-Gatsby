@@ -160,7 +160,7 @@ const Contact = props => {
               </label>
               <textarea
                 id="message"
-                name="Message"
+                name="message"
                 rows="6"
                 className="border-r-sm bg-f width-p-lg"
               />
