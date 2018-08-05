@@ -124,10 +124,12 @@ const Contact = props => {
           <form
             name="contact"
             method="POST"
+            action="/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             className="display-f direction-c align-l justify-sb margin-tb-md width-p-lg"
           >
+            <input type="hidden" name="bot-field" />
             <div className="display-f direction-c justify-sa width-p-lg margin-b-md">
               <label htmlFor="name" className="margin-sm">
                 <strong>Name</strong>
