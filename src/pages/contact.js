@@ -156,9 +156,7 @@ const Contact = props => {
             </div>
             <div className="display-f direction-c justify-sa width-p-lg margin-b-md">
               <label htmlFor="message" className="margin-sm">
-                <strong>
-                  Message <span className="text-sm color-m">(Optional)</span>
-                </strong>
+                <strong>Message</strong>
               </label>
               <textarea
                 id="message"
