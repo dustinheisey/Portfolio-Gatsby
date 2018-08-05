@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import { Info } from '../components/Cards'
 import Button from '../components/Button'
 
 const NotFoundPage = () => (
@@ -15,13 +14,13 @@ const NotFoundPage = () => (
         }
       ]}
     />
-    <Info name="landing-services">
+    <section className="border-r-lg bg-l shadow margin-lg  display-f direction-c align-l justify-c padding-lg">
       <h1 className="margin-b-md">Page Not Found</h1>
       <p className="margin-b-md color-m">
         You just hit a route that doesn&#39;t exist... the sadness.
       </p>
       <Button link="/" text="Back Home" />
-    </Info>
+    </section>
   </Layout>
 )
 
