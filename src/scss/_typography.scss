@@ -1,0 +1,146 @@
+// Start Editing
+@font-face {
+  font-family: 'Open Sans';
+  src: 'https://fonts.googleapis.com/css?family=Open+Sans:700';
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: 'https://fonts.googleapis.com/css?family=Montserrat:400';
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--primary-dark);
+  line-height: 1.2;
+}
+
+h4,
+h5,
+h6,
+p,
+a,
+small,
+label {
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--secondary-dark);
+  line-height: 1.5;
+}
+// End Editing
+
+h1 {
+  font-size: var(--text-mobile-1);
+}
+h2 {
+  font-size: var(--text-mobile-2);
+}
+
+h3 {
+  font-size: var(--text-mobile-3);
+}
+
+h4 {
+  font-size: var(--text-mobile-4);
+}
+
+h5 {
+  font-size: var(--text-mobile-5);
+}
+
+h6 {
+  font-size: var(--text-mobile-6);
+}
+
+p,
+a,
+label {
+  font-size: var(--text-mobile-7);
+}
+
+small {
+  font-size: var(--text-mobile-8);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// Tablet
+@include tablet {
+  h1 {
+    font-size: var(--text-tablet-1);
+  }
+  h2 {
+    font-size: var(--text-tablet-2);
+  }
+
+  h3 {
+    font-size: var(--text-tablet-3);
+  }
+
+  h4 {
+    font-size: var(--text-tablet-4);
+  }
+
+  h5 {
+    font-size: var(--text-tablet-5);
+  }
+
+  h6 {
+    font-size: var(--text-tablet-6);
+  }
+
+  p,
+  a,
+  label {
+    font-size: var(--text-tablet-7);
+  }
+
+  small {
+    font-size: var(--text-tablet-8);
+  }
+}
+
+// Desktop
+@include desktop {
+  h1 {
+    font-size: var(--text-desktop-1);
+  }
+  h2 {
+    font-size: var(--text-desktop-2);
+  }
+
+  h3 {
+    font-size: var(--text-desktop-3);
+  }
+
+  h4 {
+    font-size: var(--text-desktop-4);
+  }
+
+  h5 {
+    font-size: var(--text-desktop-5);
+  }
+
+  h6 {
+    font-size: var(--text-desktop-6);
+  }
+
+  p,
+  a,
+  label {
+    font-size: var(--text-desktop-7);
+  }
+
+  small {
+    font-size: var(--text-desktop-8);
+  }
+}

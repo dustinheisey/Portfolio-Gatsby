@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.7%;
+}
+
+body {
+  background-image: url('../images/background.svg'),
+    linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.7),
+      rgba(240, 240, 240, 0.7)
+    );
+  background-size: cover;
+
+  #toggle {
+    display: none;
+    animation: close 1s forwards;
+  }
+
+  #toggle ~ ul {
+    display: none;
+  }
+
+  #toggle:checked ~ ul {
+    display: flex;
+  }
+}
