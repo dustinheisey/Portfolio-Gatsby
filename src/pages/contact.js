@@ -124,19 +124,23 @@ const Contact = props => {
           <form
             name="contact"
             method="POST"
-            netlify
-            action="/success"
-            netlify-honeypot="bot-field"
+            action="/success/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
             className="display-f direction-c align-l justify-sb margin-tb-md width-p-lg"
           >
-            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>
+                Don’t fill this out: <input name="bot-field" />
+              </label>
+            </p>
             <div className="display-f direction-c justify-sa width-p-lg margin-b-md">
               <label htmlFor="name" className="margin-sm">
                 <strong>Name</strong>
               </label>
               <input
                 type="text"
-                id="name"
                 name="name"
                 autoComplete="name"
                 className="border-r-sm bg-f width-p-lg"
@@ -148,7 +152,6 @@ const Contact = props => {
               </label>
               <input
                 type="email"
-                id="email"
                 name="email"
                 autoComplete="email"
                 className="border-r-sm bg-f width-p-lg"
