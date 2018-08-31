@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './Header'
 import Footer from './Footer'
 import '../scss/style.scss'
+import Apple from '../images/touch-icon.png'
 
 const Layout = ({ children, data }) => (
   <StaticQuery
@@ -22,6 +23,7 @@ const Layout = ({ children, data }) => (
       <>
         <Helmet>
           <html lang="en" />
+          <link rel="apple-touch-icon" href={Apple} />
         </Helmet>
         <Header />
         {children}
