@@ -287,6 +287,9 @@
 }
 
 .padding {
+  &-xsm {
+    padding: 1vmin;
+  }
   &-sm {
     padding: var(--padding-sm);
   }

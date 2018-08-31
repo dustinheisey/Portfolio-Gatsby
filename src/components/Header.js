@@ -23,7 +23,10 @@ class Header extends Component {
       <header className="padding-t-lg padding-lr-lg">
         <nav className="display-f direction-c justify-c align-sb bg-l border-r-lg shadow position-r index-t">
           <div className="display-f justify-sa t-justify-sb padding-tb-lg padding-lr-md t-padding-tb-md t-padding-lr-lg align-c bg-l index-t border-r-lg">
-            <a href="/" className="width-p-xmd t-width-p-md display-f align-c">
+            <a
+              href="/"
+              className="width-p-xmd t-width-p-md display-f align-c padding-xsm"
+            >
               <img
                 src={Logo}
                 alt="Dustin Heisey Web Design"
