@@ -68,7 +68,7 @@ const Portfolio = props => {
           </Link>
 
           <Link
-            link="https://geomancy.dustinheisey.com"
+            link="https://geomancy.getdallaswebdesign.com"
             rel="nofollow"
             classes="height-p-lg"
           >
@@ -86,7 +86,7 @@ const Portfolio = props => {
           </Link>
 
           <Link
-            link="https://snake.dustinheisey.com"
+            link="https://snake.getdallaswebdesign.com"
             rel="nofollow"
             classes="height-p-lg"
           >
