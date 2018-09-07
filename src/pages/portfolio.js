@@ -34,6 +34,7 @@ const Portfolio = props => {
           <Link
             link="https://www.my-teamgear.com"
             rel="nofollow"
+            target="_blank"
             classes="height-p-lg"
           >
             <img
@@ -51,6 +52,7 @@ const Portfolio = props => {
           <Link
             link="http://www.aerialsgymnastics.net"
             rel="nofollow"
+            target="_blank"
             classes="height-p-lg"
           >
             <img
@@ -70,6 +72,7 @@ const Portfolio = props => {
           <Link
             link="https://geomancy.getdallaswebdesign.com"
             rel="nofollow"
+            target="_blank"
             classes="height-p-lg"
           >
             <img
@@ -86,8 +89,9 @@ const Portfolio = props => {
           </Link>
 
           <Link
-            link="https://snake.getdallaswebdesign.com"
+            link="https://www.snake.getdallaswebdesign.com/"
             rel="nofollow"
+            target="_blank"
             classes="height-p-lg"
           >
             <img
