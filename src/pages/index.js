@@ -6,8 +6,8 @@ import Button from '../components/Button'
 import { Info, Image } from '../components/Cards'
 
 import Benefits from '../images/web-design-benefits.jpg'
-import Team from '../images/team.jpg'
-import Aerials from '../images/aerials.jpg'
+import Snake from '../images/works-snake.jpg'
+import Aerials from '../images/works-aerials.jpg'
 import Responsive from '../images/mobile-first-design.svg'
 import Purposeful from '../images/purposeful-design.svg'
 import Secure from '../images/site-security.svg'
@@ -119,31 +119,30 @@ const Index = props => (
       </Info>
 
       <Info name="landing-works">
-        <h2 className="margin-b-md">Check Out My Recent Work</h2>
-        <a href="https://www.my-teamgear.com" rel="nofollow">
-          <div>
-            <img
-              src={Team}
-              alt="MY Team Gear"
-              className="width-p-lg height-a"
-            />
-            <h3 className="margin-b-md">MY Team Gear</h3>
-            <p className="margin-b-md color-m">
-              Custom team gear for every sport and fan imaginable.
-            </p>
-          </div>
-        </a>
         <a href="http://www.aerialsgymnastics.net" rel="nofollow">
           <div>
             <img
               src={Aerials}
               alt="Aerials Gymnastics"
-              className="width-p-lg height-a"
+              className="width-p-lg height-a border-r-md"
             />
-            <h3 className="margin-b-md">Aerials</h3>
+            <h3 className="margin-b-md">Aerials Gymnastics</h3>
             <p className="margin-b-md color-m">
               Join a high performing gymnastics gym that treats its students
               like family.
+            </p>
+          </div>
+        </a>
+        <a href="https://www.snake.getdallaswebdesign.com" rel="nofollow">
+          <div>
+            <img
+              src={Snake}
+              alt="Snake"
+              className="width-p-lg height-a border-r-md"
+            />
+            <h3 className="margin-b-md">Snake</h3>
+            <p className="margin-b-md color-m">
+              Play a nostalgic game with a minimal aesthetic.
             </p>
           </div>
         </a>

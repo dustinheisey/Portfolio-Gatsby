@@ -32,24 +32,6 @@ const Portfolio = props => {
 
         <Container name="works-grid">
           <Link
-            link="https://www.my-teamgear.com"
-            rel="nofollow"
-            target="_blank"
-            classes="height-p-lg"
-          >
-            <img
-              src={Team}
-              alt="My Team Gear"
-              className="border-r-tl-lg border-r-tr-lg width-p-lg height-a"
-            />
-            <div className="padding-md height-p-xmd">
-              <h2 className="margin-b-md text-xmd">MY Team Gear</h2>
-              <p className="margin-b-md text-md">
-                Custom team gear for every sport and fan imaginable.
-              </p>
-            </div>
-          </Link>
-          <Link
             link="http://www.aerialsgymnastics.net"
             rel="nofollow"
             target="_blank"

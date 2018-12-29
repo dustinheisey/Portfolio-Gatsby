@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Button from '../components/Button'
 import { Info, Interval } from '../components/Cards'
 
+
 const About = props => {
   return (
     <Layout>
