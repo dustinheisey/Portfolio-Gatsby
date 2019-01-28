@@ -10,7 +10,7 @@ import User from '../images/icon-user.svg'
 
 import Web from '../images/service-website.svg'
 import PWA from '../images/service-pwa.svg'
-import Optimization from '../images/service-Maintenance.svg'
+import Optimization from '../images/service-maintenance.svg'
 
 import { Container, Info } from '../components/Cards'
 
