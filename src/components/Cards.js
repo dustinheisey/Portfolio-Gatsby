@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 import Avatar from '../images/dustin-heisey.svg'
 
 const Container = ({ name, classes, children }) => {
@@ -12,10 +13,69 @@ const Container = ({ name, classes, children }) => {
     </section>
   )
 }
+
+const Project = ({
+  img,
+  title,
+  text,
+  textColor,
+  btnText,
+  btnLink,
+  btnColor,
+  external,
+  orientation,
+  classes
+}) => {
+  return (
+    <section
+      className={`border-r-lg bg-l shadow margin-tb-lg t-margin-n project ${
+        orientation === 0 ? 'project-left ' : 'project-right'
+      } ${classes !== undefined ? classes : ''} `}
+    >
+      <img
+        src={img}
+        alt={title}
+        className={`project-image width-p-lg border-r-tl-lg border-r-tr-lg ${
+          orientation === 0
+            ? 'd-border-r-tl-lg d-border-r-tr-n d-border-r-bl-lg'
+            : 'd-border-r-tr-lg d-border-r-tl-n d-border-r-br-lg'
+        }`}
+      />
+
+      <div className="project-text width-p-lg padding-lg">
+        <h2
+          className={`margin-b-md ${textColor !== undefined ? textColor : ''}`}
+        >
+          {title}
+        </h2>
+        <p className="text-md margin-b-md color-m">{text}</p>
+        <Button
+          text={btnText}
+          link={btnLink}
+          classes={btnColor}
+          external={external}
+        />
+      </div>
+    </section>
+  )
+}
+
 const Info = ({ name, classes, children }) => {
   return (
     <section
       className={`border-r-lg bg-l shadow margin-tb-lg t-margin-n display-f direction-c align-l justify-c padding-lg ${
+        name !== undefined ? name : ''
+      } ${classes !== undefined ? classes : ''}`}
+    >
+      {children}
+    </section>
+  )
+}
+
+const Form = ({ name, classes, children }) => {
+  return (
+    <section
+      className={`border-r-lg bg-l shadow margin-tb-lg t-margin-n display-f direction-c align-l justify-c padding-lg d-padding-lg t-padding-sm ${
         name !== undefined ? name : ''
       } ${classes !== undefined ? classes : ''}`}
     >
@@ -67,7 +127,7 @@ class Interval extends React.Component {
     super(props)
     this.state = {
       subtitle: 1,
-      subtitleText: 'I design mobile first websites.',
+      subtitleText: 'I design mobile first websites.'
     }
 
     this.onInterval = this.onInterval.bind(this)
@@ -87,31 +147,31 @@ class Interval extends React.Component {
       case 1:
         this.setState({
           subtitle: 2,
-          subtitileText: 'I develop attractive user experiences.',
+          subtitileText: 'I develop attractive user experiences.'
         })
         break
       case 2:
         this.setState({
           subtitle: 3,
-          subtitleText: 'I keep user and client data safe.',
+          subtitleText: 'I keep user and client data safe.'
         })
         break
       case 3:
         this.setState({
           subtitle: 4,
-          subtitleText: 'I optimize everything.',
+          subtitleText: 'I optimize everything.'
         })
         break
       case 4:
         this.setState({
           subtitle: 5,
-          subtitleText: 'I create native-like web designs.',
+          subtitleText: 'I create native-like web designs.'
         })
         break
       case 5:
         this.setState({
           subtitle: 1,
-          subtitileText: 'I design mobile first websites.',
+          subtitileText: 'I design mobile first websites.'
         })
         break
       default:
@@ -139,4 +199,4 @@ class Interval extends React.Component {
   }
 }
 
-export { Container, Info, Link, Image, Grid, Interval }
+export { Container, Info, Form, Link, Image, Project, Grid, Interval }

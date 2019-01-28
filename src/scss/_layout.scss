@@ -112,21 +112,39 @@ main {
   flex: 1 0 auto;
 }
 
+// .about {
+
+//   &-skills {
+//       &-sub {
+//         &-item {
+//         }
+//       display: grid;
+//       align-content: center;
+//       align-items: center;
+//       justify-content: center;
+//       justify-items: center;
+//       grid-template-columns: repeat(3, 1fr);
+//       grid-gap: 4vmin;
+//       }
+//   }
+// }
+
 // .footer {
 //   flex-shrink: 0;
 // }
 
 .contact {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-social {
-  display: grid;
-  grid-gap: 2vmin;
-  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-  align-items: stretch;
-  justify-items: stretch;
-}
+// .contact-social {
+//   display: grid;
+//   grid-gap: 2vmin;
+//   grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+//   align-items: stretch;
+//   justify-items: stretch;
+// }
 
 // Auto Grids
 .services {
@@ -145,91 +163,157 @@ main {
   }
 }
 
+.project {
+  &-left {
+  }
+
+  &-right {
+  }
+
+  &-image {
+  }
+
+  &-text {
+  }
+}
+
 // Tablet
 @include tablet {
+  // .landing {
+  //   display: grid;
+  //   grid-template-columns: repeat(8, 1fr);
+  //   grid-template-rows: repeat(3, min-content);
+  //   // grid-template-areas:
+  //   //   "b b b b b s s s"
+  //   //   "w w w t t t t t"
+  //   //   "w w w a a a a a"
+  //   //   "c c c c c c c c";
+
+  //   grid-template-areas:
+  //     'b b b b b s s s'
+  //     'w w w a a a a a'
+  //     'w w w c c c c c';
+
+  //   grid-gap: 5vmin;
+
+  //   &-services {
+  //     grid-area: s;
+  //   }
+
+  //   &-benefits {
+  //     grid-area: b;
+  //   }
+
+  //   &-testimonials {
+  //     grid-area: t;
+  //   }
+
+  //   &-about {
+  //     grid-area: a;
+  //   }
+
+  //   &-works {
+  //     grid-area: w;
+  //   }
+
+  //   &-contact {
+  //     grid-area: c;
+  //   }
+
   .landing {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3, min-content);
-    // grid-template-areas:
-    //   "b b b b b s s s"
-    //   "w w w t t t t t"
-    //   "w w w a a a a a"
-    //   "c c c c c c c c";
-
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, min-content);
+    grid-gap: 3vmin;
     grid-template-areas:
-      'b b b b b s s s'
-      'w w w a a a a a'
-      'w w w c c c c c';
+      'header header header header header header cost cost cost cost cost cost'
+      'changes changes changes changes changes changes changes changes changes changes changes changes'
+      'usability usability usability usability usability usability pwa pwa pwa pwa pwa pwa'
+      'speed speed speed speed speed speed speed speed speed speed speed speed'
+      'testimonial testimonial testimonial testimonial testimonial me me me me me me me'
+      'contact contact contact contact contact contact contact contact contact contact contact contact';
 
-    grid-gap: 5vmin;
-
-    &-services {
-      grid-area: s;
+    &-header {
+      grid-area: header;
     }
 
-    &-benefits {
-      grid-area: b;
+    &-cost {
+      grid-area: cost;
     }
 
-    &-testimonials {
-      grid-area: t;
+    &-changes {
+      grid-area: changes;
     }
 
-    &-about {
-      grid-area: a;
+    &-speed {
+      grid-area: speed;
     }
 
-    &-works {
-      grid-area: w;
+    &-usability {
+      grid-area: usability;
+    }
+
+    &-pwa {
+      grid-area: pwa;
+    }
+
+    &-me {
+      grid-area: me;
+    }
+
+    &-testimonial {
+      grid-area: testimonial;
     }
 
     &-contact {
-      grid-area: c;
+      grid-area: contact;
     }
   }
 
   .about {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, min-content);
     grid-template-areas:
-      'i i d'
-      'p m m'
-      's s o'
-      'c co co';
+      'blurb blurb skills skills'
+      'intro intro intro intro'
+      'user user user user'
+      'business business business business'
+      'responsive responsive responsive responsive'
+      'fast fast fast fast'
+      'contact contact contact contact';
     grid-gap: 5vmin;
 
-    &-image {
-      grid-area: i;
+    &-blurb {
+      grid-area: blurb;
     }
 
-    &-instructions {
-      grid-area: d;
+    &-skills {
+      grid-area: skills;
     }
 
-    &-mobile {
-      grid-area: m;
+    &-intro {
+      grid-area: intro;
     }
 
-    &-purpose {
-      grid-area: p;
+    &-user {
+      grid-area: user;
     }
 
-    &-security {
-      grid-area: s;
+    &-business {
+      grid-area: business;
     }
 
-    &-optimize {
-      grid-area: o;
+    &-responsive {
+      grid-area: responsive;
     }
 
-    &-care {
-      grid-area: c;
+    &-fast {
+      grid-area: fast;
     }
 
     &-contact {
-      grid-area: co;
+      grid-area: contact;
     }
   }
 
@@ -285,12 +369,15 @@ main {
   }
 
   .contact {
-    grid-gap: 5vmin;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap: 3vmin;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
   }
 
   .contact-form {
-    grid-column: 1 / span 2;
+    grid-column: 2 / 4;
+    grid-row: 1 / -1;
   }
   // .footer {
   //   height: 5vh;
@@ -304,6 +391,107 @@ main {
 }
 
 @include desktop {
+  .landing {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, min-content);
+    grid-gap: 3vmin;
+    grid-template-areas:
+      'header header header header header header header header header cost cost cost'
+      'changes changes changes changes changes changes changes changes changes changes changes changes'
+      'speed speed speed speed usability usability usability usability pwa pwa pwa pwa'
+      'testimonial testimonial testimonial me me me me me me me me me'
+      'contact contact contact contact contact contact contact contact contact contact contact contact';
+
+    &-header {
+      grid-area: header;
+    }
+
+    &-cost {
+      grid-area: cost;
+    }
+
+    &-changes {
+      grid-area: changes;
+    }
+
+    &-speed {
+      grid-area: speed;
+    }
+
+    &-usability {
+      grid-area: usability;
+    }
+
+    &-pwa {
+      grid-area: pwa;
+    }
+
+    &-me {
+      grid-area: me;
+    }
+
+    &-testimonial {
+      grid-area: testimonial;
+    }
+
+    &-contact {
+      grid-area: contact;
+    }
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, min-content);
+    grid-template-areas:
+      'blurb blurb skills skills'
+      'intro intro intro intro'
+      'user user business business'
+      'responsive responsive fast fast'
+      'contact contact contact contact';
+    grid-gap: 5vmin;
+
+    &-blurb {
+      grid-area: blurb;
+    }
+
+    &-skills {
+      grid-area: skills;
+
+      &-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, min-content);
+        grid-gap: 1vmin 2vmin;
+      }
+    }
+
+    &-intro {
+      grid-area: intro;
+    }
+
+    &-user {
+      grid-area: user;
+    }
+
+    &-business {
+      grid-area: business;
+    }
+
+    &-responsive {
+      grid-area: responsive;
+    }
+
+    &-fast {
+      grid-area: fast;
+    }
+
+    &-contact {
+      grid-area: contact;
+    }
+  }
+
   .works-grid {
     grid-auto-rows: 600px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -313,5 +501,31 @@ main {
     grid-template-columns: repeat(6, 10vmin);
     justify-content: center;
     align-content: center;
+  }
+
+  .service {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+    &-left {
+      grid-template-areas: 'image image text text text';
+    }
+
+    &-right {
+      grid-template-areas: 'text text text image image';
+    }
+
+    &-image {
+      grid-area: image;
+    }
+
+    &-text {
+      grid-area: text;
+    }
   }
 }

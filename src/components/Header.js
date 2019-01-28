@@ -31,7 +31,7 @@ class Header extends Component {
               />
             </a>
             <div
-              className="bg-p-d border-r-md display-f direction-c justify-c self-c align-c width-v-sm t-width-u height-v-sm t-height-u cursor-p icon grow"
+              className="bg-p-d border-r-md display-f direction-c justify-c self-c align-c width-v-sm t-width-u height-v-sm t-height-u cursor-p icon select-n grow"
               onClick={this.handleClick}
             >
               <span

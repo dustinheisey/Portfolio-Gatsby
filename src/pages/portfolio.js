@@ -1,9 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import { Container, Info, Link } from '../components/Cards'
+import { Info, Project } from '../components/Cards'
+import Button from '../components/Button'
 
-import Team from '../images/works-team.jpg'
 import Aerials from '../images/works-aerials.jpg'
 import Geomancy from '../images/works-geomancy.jpg'
 import Snake from '../images/works-snake.jpg'
@@ -23,14 +23,64 @@ const Portfolio = props => {
           ]}
         />
         <Info>
-          <h1 className="margin-b-md">Recent Web Design Work</h1>
-          <p className="margin-b-md color-m">
-            Here are some of my recent projects. Work with me and I'll add yours
-            to the list!
+          <h1 className="margin-b-sm">Check Out My Work</h1>
+          <p className="text-md color-m">
+            Here are some of my recent projects. Take a look.
           </p>
         </Info>
 
-        <Container name="works-grid">
+        <Project
+          img={Aerials}
+          title="Aerials Gymnastics"
+          text="Join a high performing gymnastics gym that treats its students
+                like family."
+          textColor="gradient-text-aerials"
+          btnColor="gradient-aerials"
+          btnText="View Website"
+          btnLink="http://www.aerialsgymnastics.net"
+          external
+          orientation={0}
+        />
+
+        <Project
+          img={Geomancy}
+          title="Geomancy"
+          text="Can you tap your way to the final shape?"
+          textColor="gradient-text-geomancy"
+          btnColor="gradient-geomancy"
+          btnText="View Website"
+          external
+          btnLink="https://geomancy.getdallaswebdesign.com"
+          orientation={1}
+        />
+
+        <Project
+          img={Snake}
+          title="Snake"
+          text="Play a nostalgic game with a minimal aesthetic."
+          textColor="gradient-text-snake"
+          btnColor="gradient-snake"
+          btnText="View Website"
+          external
+          btnLink="https://www.snake.getdallaswebdesign.com/"
+          orientation={0}
+        />
+
+        <Info name="display-f direction-c align-c">
+          <h2 className="margin-b-sm">
+            Let figure out how I can help you next
+          </h2>
+          <p className="margin-b-sm text-md">
+            Contact me today and I'll design a custom solution for your problems
+          </p>
+          <Button
+            text="Hear my ideas"
+            link="/contact"
+            classes="width-v-xmd bg-p-d display-f justify-c"
+          />
+        </Info>
+
+        {/* <Container name="works-grid">
           <Link
             link="http://www.aerialsgymnastics.net"
             rel="nofollow"
@@ -88,7 +138,7 @@ const Portfolio = props => {
               </p>
             </div>
           </Link>
-        </Container>
+        </Container> */}
       </main>
     </Layout>
   )

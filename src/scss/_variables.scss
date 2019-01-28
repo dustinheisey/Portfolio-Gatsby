@@ -7,6 +7,7 @@
 
   --secondary-light: #ffffff;
   --secondary: #4d4d4d;
+  --secondary-light-dark: #fcfcfc;
   --secondary-dark: #262626;
 
   // Effects
@@ -14,11 +15,12 @@
   --shadow-hover: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
   // Layout
+  --margin-xsm: .5vmin;
   --margin-sm: 1vmin;
   --margin-md: 3vmin;
   --margin-lg: 5vmin;
 
-  --padding-sm: 2vmin;
+  --padding-sm: 2.5vmin;
   --padding-md: 4vmin;
   --padding-lg: 5vmin;
 
