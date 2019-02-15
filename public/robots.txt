@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.getdallaswebdesign.com/sitemap.xml
+Host: https://www.getdallaswebdesign.com
