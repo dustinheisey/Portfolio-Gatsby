@@ -4,30 +4,30 @@
   "version": "1.0.0",
   "author": "Dustin Heisey <dustin@dustinheisey.com>",
   "dependencies": {
-    "gatsby": "2.0.96",
-    "gatsby-plugin-canonical-urls": "2.0.8",
-    "gatsby-plugin-google-analytics": "2.0.10",
-    "gatsby-plugin-manifest": "2.0.13",
-    "gatsby-plugin-netlify": "2.0.6",
-    "gatsby-plugin-nprogress": "2.0.7",
-    "gatsby-plugin-offline": "2.0.21",
-    "gatsby-plugin-react-helmet": "3.0.5",
-    "gatsby-plugin-robots-txt": "^1.3.0",
-    "gatsby-plugin-sass": "2.0.7",
-    "gatsby-plugin-sitemap": "2.0.4",
+    "gatsby": "2.2.5",
+    "gatsby-plugin-canonical-urls": "2.0.12",
+    "gatsby-plugin-google-analytics": "2.0.17",
+    "gatsby-plugin-manifest": "2.0.24",
+    "gatsby-plugin-netlify": "2.0.13",
+    "gatsby-plugin-nprogress": "2.0.10",
+    "gatsby-plugin-offline": "2.0.25",
+    "gatsby-plugin-react-helmet": "3.0.10",
+    "gatsby-plugin-robots-txt": "^1.4.0",
+    "gatsby-plugin-sass": "2.0.11",
+    "gatsby-plugin-sitemap": "2.0.10",
     "node-sass": "^4.11.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0"
   },
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
+    "serve": "gatsby build && gatsby serve",
     "format": "prettier --write '**/*.js'"
   },
   "devDependencies": {
-    "gatsby-plugin-purgecss": "^3.1.0",
-    "prettier": "^1.16.1"
+    "gatsby-plugin-purgecss": "^3.1.1",
+    "prettier": "^1.16.4"
   }
 }
