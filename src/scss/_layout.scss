@@ -164,16 +164,31 @@ main {
 }
 
 .project {
+  display: grid;
+  padding: 0;
+
   &-left {
+    grid-template-columns: 0.65fr 0.35fr;
+    grid-template-areas: 'image text';
   }
 
   &-right {
+    grid-template-columns: 0.35fr 0.65fr;
+    grid-template-areas: 'text image';
   }
 
   &-image {
+    grid-area: image;
+    width: 100%;
   }
 
   &-text {
+    grid-area: text;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
 }
 

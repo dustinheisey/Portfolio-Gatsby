@@ -7,6 +7,7 @@ import Button from '../components/Button'
 import Aerials from '../images/works-aerials.jpg'
 import Geomancy from '../images/works-geomancy.jpg'
 import Snake from '../images/works-snake.jpg'
+import Honey from '../images/works-hoover-honey.png'
 
 const Portfolio = props => {
   return (
@@ -28,7 +29,17 @@ const Portfolio = props => {
             Here are some of my recent projects. Take a look.
           </p>
         </Info>
-
+        <Project
+          img={Honey}
+          title="Hoover Honey"
+          text="Enjoy the taste and benefits of real honey sold by real people."
+          textColor="gradient-text-honey"
+          btnColor="gradient-honey"
+          btnText="View Website"
+          btnLink="http://hooverhoney.com"
+          external
+          orientation={1}
+        />
         <Project
           img={Aerials}
           title="Aerials Gymnastics"

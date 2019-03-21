@@ -1425,6 +1425,9 @@
   }
 }
 .gradient {
+  &-honey {
+    background-color: #c6920d;
+  }
   &-aerials {
     background-color: #42c9e2;
   }
@@ -1438,6 +1441,9 @@
   }
 
   &-text {
+    &-honey {
+      color: #c6920d;
+    }
     &-aerials {
       color: #42c9e2;
     }
