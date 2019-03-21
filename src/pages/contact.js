@@ -25,9 +25,8 @@ const Contact = props => {
         <Info name="contact-text">
           <h2>Get in Touch</h2>
           <p className="text-sm">
-            Ready to move forward? Not sure and have some
-            questions? Send me a message and prefered method of contact.
-            I'll reach out ASAP to help!
+            Ready to move forward? Not sure and have some questions? Send me a
+            message and prefered method of contact. I'll reach out ASAP to help!
           </p>
         </Info>
 

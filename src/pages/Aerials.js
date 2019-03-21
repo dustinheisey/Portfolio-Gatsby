@@ -22,4 +22,3 @@ const Aerials = props => {
 }
 
 export default Aerials
-
