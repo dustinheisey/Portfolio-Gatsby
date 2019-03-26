@@ -53,30 +53,6 @@ const Portfolio = props => {
           orientation={0}
         />
 
-        <Project
-          img={Geomancy}
-          title="Geomancy"
-          text="Can you tap your way to the final shape?"
-          textColor="gradient-text-geomancy"
-          btnColor="gradient-geomancy"
-          btnText="View Website"
-          external
-          btnLink="https://geomancy.getdallaswebdesign.com"
-          orientation={1}
-        />
-
-        <Project
-          img={Snake}
-          title="Snake"
-          text="Play a nostalgic game with a minimal aesthetic."
-          textColor="gradient-text-snake"
-          btnColor="gradient-snake"
-          btnText="View Website"
-          external
-          btnLink="https://www.snake.getdallaswebdesign.com/"
-          orientation={0}
-        />
-
         <Info name="display-f direction-c align-c">
           <h2 className="margin-b-sm">
             Let figure out how I can help you next
