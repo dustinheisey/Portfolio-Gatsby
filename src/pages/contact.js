@@ -13,7 +13,7 @@ const Contact = props => {
     <Layout>
       <main className="contact padding-lg">
         <Helmet
-          title="Contact Us | Dallas Web Design"
+          title="Contact Us | Dustin Heisey"
           meta={[
             {
               name: 'description',

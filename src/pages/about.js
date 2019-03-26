@@ -10,7 +10,7 @@ const About = props => {
     <Layout>
       <main className="about padding-lg">
         <Helmet
-          title="Quality Web Design | What Makes Me Different | Dallas Web Design"
+          title="Quality Web Design | What Makes Me Different | Dustin Heisey"
           meta={[
             {
               name: 'description',

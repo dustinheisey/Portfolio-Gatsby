@@ -14,7 +14,7 @@ const Portfolio = props => {
     <Layout>
       <main className="works padding-lg">
         <Helmet
-          title=" Recent Web Designs | Web Designer Portfolio | Dallas Web Design"
+          title=" Recent Web Designs | Web Designer Portfolio | Dustin Heisey"
           meta={[
             {
               name: 'description',

@@ -19,7 +19,7 @@ const Services = props => {
     <Layout>
       <main className="services padding-lg">
         <Helmet
-          title="Custom Web Design | Ecommerce | Personal Blog | PWA"
+          title="Custom Web Design | Progressive Web App | Maintenance & Optimization"
           meta={[
             {
               name: 'description',

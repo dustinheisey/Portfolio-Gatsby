@@ -9,7 +9,7 @@ const Index = props => (
   <Layout>
     <main className="landing padding-lg">
       <Helmet
-        title="Dallas Web Design & Web Development | Quality Website Design"
+        title="User Experience Design, Web Design & Development | Dustin Heisey"
         meta={[
           {
             name: 'description',

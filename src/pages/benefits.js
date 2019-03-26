@@ -10,7 +10,7 @@ const Benefits = props => {
     <Layout>
       <main className="benefits padding-lg">
         <Helmet
-          title="Website Ownership | Benefits Of Owning A Website | Dallas Web Design"
+          title="Website Ownership | Benefits Of Owning A Website | Dustin Heisey"
           meta={[
             {
               name: 'description',

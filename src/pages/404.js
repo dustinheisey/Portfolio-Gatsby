@@ -6,7 +6,7 @@ import Button from '../components/Button'
 const NotFoundPage = () => (
   <Layout>
     <Helmet
-      title="Page Not Found | Dallas Web Design"
+      title="Page Not Found | Dustin Heisey"
       meta={[
         {
           name: 'description',
