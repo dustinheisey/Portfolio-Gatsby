@@ -20,24 +20,27 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="padding-t-lg padding-lr-lg">
-        <nav className="display-f direction-c justify-c align-sb bg-l border-r-lg shadow position-r index-t">
-          <div className="display-f justify-sa t-justify-sb padding-tb-lg padding-lr-md t-padding-tb-md t-padding-lr-lg align-c bg-l index-t border-r-lg">
-            <a href="/" className="width-p-xmd t-width-p-md display-f align-c">
+      <header className='padding-t-lg padding-lr-lg'>
+        <nav className='display-f direction-c justify-c align-sb bg-l border-r-lg shadow position-r index-t'>
+          <div className='display-f justify-sa t-justify-sb padding-tb-lg padding-lr-md t-padding-tb-md t-padding-lr-lg align-c bg-l index-t border-r-lg'>
+            <a
+              href='/'
+              className='width-p-xmd t-width-p-md display-f align-c'
+            >
               <img
                 src={Logo}
-                alt="Dustin Heisey Web Design"
-                className="width-p-lg"
+                alt='Dustin Heisey Web Design'
+                className='width-p-lg'
               />
             </a>
             <div
-              className="bg-p-d border-r-md display-f direction-c justify-c self-c align-c width-v-sm t-width-u height-v-sm t-height-u cursor-p icon select-n grow"
+              className='bg-p-d border-r-md display-f direction-c justify-c self-c align-c width-v-sm t-width-u height-v-sm t-height-u cursor-p icon select-n grow'
               onClick={this.handleClick}
             >
               <span
                 onClick={this.handleClick}
-                className={`hamburger ${this.state.menuVisible &&
-                  'hamburger-active'}`}
+                className={`hamburger ${this.state
+                  .menuVisible && 'hamburger-active'}`}
               />
             </div>
           </div>

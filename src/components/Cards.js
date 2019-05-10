@@ -29,7 +29,9 @@ const Project = ({
   return (
     <section
       className={`border-r-lg bg-l shadow margin-tb-lg t-margin-n project ${
-        orientation === 0 ? 'project-left ' : 'project-right'
+        orientation === 0
+          ? 'project-left '
+          : 'project-right'
       } ${classes !== undefined ? classes : ''} `}
     >
       <img
@@ -42,13 +44,17 @@ const Project = ({
         }`}
       />
 
-      <div className="project-text width-p-lg padding-lg">
+      <div className='project-text width-p-lg padding-lg'>
         <h2
-          className={`margin-b-md ${textColor !== undefined ? textColor : ''}`}
+          className={`margin-b-md ${
+            textColor !== undefined ? textColor : ''
+          }`}
         >
           {title}
         </h2>
-        <p className="text-md margin-b-md color-m">{text}</p>
+        <p className='text-md margin-b-md color-m'>
+          {text}
+        </p>
         <Button
           text={btnText}
           link={btnLink}
@@ -147,7 +153,8 @@ class Interval extends React.Component {
       case 1:
         this.setState({
           subtitle: 2,
-          subtitileText: 'I develop attractive user experiences.'
+          subtitileText:
+            'I develop attractive user experiences.'
         })
         break
       case 2:
@@ -181,22 +188,35 @@ class Interval extends React.Component {
 
   render() {
     return (
-      <section className="border-r-lg bg-l shadow margin-tb-lg t-margin-n display-f direction-c align-c about-image">
+      <section className='border-r-lg bg-l shadow margin-tb-lg t-margin-n display-f direction-c align-c about-image'>
         <img
           src={Avatar}
-          alt="About Me"
-          className="width-p-lg height-a border-r-tl-lg border-r-tr-lg"
+          alt='About Me'
+          className='width-p-lg height-a border-r-tl-lg border-r-tr-lg'
         />
-        <div className="padding-lg">
-          <h2 className="margin-b-lg">Hey, My Name is Dustin Heisey</h2>
-          <h3 className="margin-b-lg text-xmd color-d">
+        <div className='padding-lg'>
+          <h2 className='margin-b-lg'>
+            Hey, My Name is Dustin Heisey
+          </h2>
+          <h3 className='margin-b-lg text-xmd color-d'>
             {this.state.subtitleText}
           </h3>
-          <p className="margin-b-lg color-m">{this.props.text}</p>
+          <p className='margin-b-lg color-m'>
+            {this.props.text}
+          </p>
         </div>
       </section>
     )
   }
 }
 
-export { Container, Info, Form, Link, Image, Project, Grid, Interval }
+export {
+  Container,
+  Info,
+  Form,
+  Link,
+  Image,
+  Project,
+  Grid,
+  Interval
+}

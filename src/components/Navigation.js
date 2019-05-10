@@ -7,33 +7,51 @@ const Navigation = ({ menuVisible, handleClick }) => (
       menuVisible ? 'open' : 'close'
     }`}
   >
-    <NavigationLink link="/" text="Home" handleClick={handleClick} first />
-    <NavigationLink link="/about" text="About" handleClick={handleClick} />
     <NavigationLink
-      link="/services"
-      text="Services"
+      link='/'
+      text='Home'
+      handleClick={handleClick}
+      first
+    />
+    <NavigationLink
+      link='/about'
+      text='About'
       handleClick={handleClick}
     />
     <NavigationLink
-      link="/portfolio"
-      text="Portfolio"
+      link='/services'
+      text='Services'
       handleClick={handleClick}
     />
     <NavigationLink
-      link="/contact"
-      text="Contact"
+      link='/portfolio'
+      text='Portfolio'
+      handleClick={handleClick}
+    />
+    <NavigationLink
+      link='/contact'
+      text='Contact'
       handleClick={handleClick}
       last
     />
   </ul>
 )
 
-const NavigationLink = ({ link, text, first, last, handleClick }) => {
+const NavigationLink = ({
+  link,
+  text,
+  first,
+  last,
+  handleClick
+}) => {
   return (
-    <li className={`${first && 'margin-t-md'} ${!last && 'margin-b-lg'}`}>
+    <li
+      className={`${first && 'margin-t-md'} ${!last &&
+        'margin-b-lg'}`}
+    >
       <Link
         to={link}
-        className="color-l text-lg padding-sm background"
+        className='color-l text-lg padding-sm background'
         onClick={handleClick}
       >
         {text}

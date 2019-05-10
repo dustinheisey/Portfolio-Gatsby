@@ -22,8 +22,12 @@ const Layout = ({ children, data }) => (
     render={data => (
       <>
         <Helmet>
-          <html lang="en" />
-          <link rel="apple-touch-icon" sizes="180x180" href={Apple} />
+          <html lang='en' />
+          <link
+            rel='apple-touch-icon'
+            sizes='180x180'
+            href={Apple}
+          />
         </Helmet>
         <Header />
         {children}

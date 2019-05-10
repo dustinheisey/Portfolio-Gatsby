@@ -9,8 +9,8 @@ const Button = ({ external, link, text, classes }) => {
           classes !== undefined ? classes : 'bg-p-d'
         }`}
         href={link}
-        target="_blank"
-        rel="noopener noreferrer"
+        target='_blank'
+        rel='noopener noreferrer'
       >
         {text}
       </a>

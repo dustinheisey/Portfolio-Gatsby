@@ -23,8 +23,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby build && gatsby serve",
-    "format": "prettier --write '**/*.js'"
+    "serve": "gatsby build && gatsby serve"
   },
   "devDependencies": {
     "gatsby-plugin-purgecss": "^3.1.1",

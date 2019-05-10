@@ -7,9 +7,9 @@ import { Info } from '../components/Cards'
 
 const Index = props => (
   <Layout>
-    <main className="landing padding-lg">
+    <main className='landing padding-lg'>
       <Helmet
-        title="User Experience Design, Web Design & Development | Dustin Heisey"
+        title='User Experience Design, Web Design & Development | Dustin Heisey'
         meta={[
           {
             name: 'description',
@@ -150,81 +150,96 @@ const Index = props => (
         <Button text="Let's Connect" link="/contact" />
       </Info> */}
 
-      <Info name="landing-header bg-p-d display-f direction-c align-c">
-        <h1 className="color-l">Website Not generating results?</h1>
-        <p className="color-l text-md">
-          Don't worry, let me tell you how you can change that.
+      <Info name='landing-header bg-p-d display-f direction-c align-c'>
+        <h1 className='color-l'>
+          Website Not generating results?
+        </h1>
+        <p className='color-l text-md'>
+          Don't worry, let me tell you how you can change
+          that.
         </p>
       </Info>
-      <Info name="landing-cost display-f direction-c align-l">
+      <Info name='landing-cost display-f direction-c align-l'>
         <h2>Your website may be outdated</h2>
-        <p className="text-md">
-          An outdated website could be costing you thousands every month
+        <p className='text-md'>
+          An outdated website could be costing you thousands
+          every month
         </p>
       </Info>
-      <Info name="landing-changes display-f direction-c align-c">
-        <h2>Some key changes can have incredible benefits</h2>
-        <p className="text-md">
-          Designing with purpose and looking out for your users can pay off so
-          significantly
+      <Info name='landing-changes display-f direction-c align-c'>
+        <h2>
+          Some key changes can have incredible benefits
+        </h2>
+        <p className='text-md'>
+          Designing with purpose and looking out for your
+          users can pay off so significantly
         </p>
       </Info>
 
       {/* https://www.statista.com/statistics/284202/mobile-phone-internet-user-penetration-worldwide/ */}
-      <Info name="landing-pwa display-f direction-c align-c">
+      <Info name='landing-pwa display-f direction-c align-c'>
         <h2>Mobile First</h2>
-        <p className="text-md">
-          63% of users access the web through their phones. By making mobile a
-          priority rather than an afterthought, you can increase your sites
-          usage considerably. More usage means more conversions which means more
-          profit.
+        <p className='text-md'>
+          63% of users access the web through their phones.
+          By making mobile a priority rather than an
+          afterthought, you can increase your sites usage
+          considerably. More usage means more conversions
+          which means more profit.
         </p>
       </Info>
-      <Info name="landing-speed display-f direction-c align-c">
+      <Info name='landing-speed display-f direction-c align-c'>
         <h2>Speed</h2>
-        <p className="text-md">
-          Increasing your page speed by only 1 second can increase your
-          conversions by 3%. When each new client or sale generates thousands of
-          dollars, or when your user base is very large, 3% is a very big deal.
+        <p className='text-md'>
+          Increasing your page speed by only 1 second can
+          increase your conversions by 3%. When each new
+          client or sale generates thousands of dollars, or
+          when your user base is very large, 3% is a very
+          big deal.
         </p>
       </Info>
-      <Info name="landing-usability display-f direction-c align-c">
+      <Info name='landing-usability display-f direction-c align-c'>
         <h2>Usability</h2>
-        <p className="text-md">
-          The web has become a saturated landscape. The key characteristic that
-          sepperates the sites that are successful from those that aren't is
-          usability. When your users enjoy using your website, they are more
-          likely to use it, and more likely to respond favorably to your
-          requests
+        <p className='text-md'>
+          The web has become a saturated landscape. The key
+          characteristic that sepperates the sites that are
+          successful from those that aren't is usability.
+          When your users enjoy using your website, they are
+          more likely to use it, and more likely to respond
+          favorably to your requests
         </p>
       </Info>
-      <Info name="landing-me bg-p-d padding-lg">
-        <h2 className="color-l">My Web Design works</h2>
-        <p className="color-l text-md">
-          I design in such a way that puts users first, so that I can help
-          businesses like yours sell more and make more. I focus on aesthetic
-          design that serves a clear purpose, helps users achieve their goals
-          easily, and gets them to a conversion in the least steps possible. If
-          that sounds like something you are interested in, I'd be happy to tell
-          you more.
+      <Info name='landing-me bg-p-d padding-lg'>
+        <h2 className='color-l'>My Web Design works</h2>
+        <p className='color-l text-md'>
+          I design in such a way that puts users first, so
+          that I can help businesses like yours sell more
+          and make more. I focus on aesthetic design that
+          serves a clear purpose, helps users achieve their
+          goals easily, and gets them to a conversion in the
+          least steps possible. If that sounds like
+          something you are interested in, I'd be happy to
+          tell you more.
         </p>
       </Info>
-      <Info name="landing-testimonial">
-        <p className="text-md">
-          “You've completely changed my business! You've eliminated paper from
-          my company and given us countless hours to help our students and their
+      <Info name='landing-testimonial'>
+        <p className='text-md'>
+          “You've completely changed my business! You've
+          eliminated paper from my company and given us
+          countless hours to help our students and their
           families. Thank you so much! - Marsha Mayo
         </p>
       </Info>
-      <Info name="landing-contact display-f direction-c align-c">
-        <h2 className="margin-b-sm">Ready to make more money?</h2>
-        <p className="margin-b-sm text-md">
+      <Info name='landing-contact display-f direction-c align-c'>
+        <h2 className='margin-b-sm'>
+          Ready to make more money?
+        </h2>
+        <p className='margin-b-sm text-md'>
           Send me a message we can get started right away :)
         </p>
         <Button
           text="Let's have a chat"
-          link="/contact"
-          classes="width-v-xmd bg-p-d display-f justify-c"
+          link='/contact'
+          classes='width-v-xmd bg-p-d display-f justify-c'
         />
       </Info>
     </main>

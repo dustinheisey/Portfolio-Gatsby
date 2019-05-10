@@ -5,16 +5,14 @@ import { Info, Project } from '../components/Cards'
 import Button from '../components/Button'
 
 import Aerials from '../images/works-aerials.jpg'
-import Geomancy from '../images/works-geomancy.jpg'
-import Snake from '../images/works-snake.jpg'
 import Honey from '../images/works-hoover-honey.png'
 
 const Portfolio = props => {
   return (
     <Layout>
-      <main className="works padding-lg">
+      <main className='works padding-lg'>
         <Helmet
-          title=" Recent Web Designs | Web Designer Portfolio | Dustin Heisey"
+          title=' Recent Web Designs | Web Designer Portfolio | Dustin Heisey'
           meta={[
             {
               name: 'description',
@@ -24,46 +22,48 @@ const Portfolio = props => {
           ]}
         />
         <Info>
-          <h1 className="margin-b-sm">Check Out My Work</h1>
-          <p className="text-md color-m">
-            Here are some of my recent projects. Take a look.
+          <h1 className='margin-b-sm'>Check Out My Work</h1>
+          <p className='text-md color-m'>
+            Here are some of my recent projects. Take a
+            look.
           </p>
         </Info>
         <Project
           img={Honey}
-          title="Hoover Honey"
-          text="Enjoy the taste and benefits of real honey sold by real people."
-          textColor="gradient-text-honey"
-          btnColor="gradient-honey"
-          btnText="View Website"
-          btnLink="http://hooverhoney.com"
+          title='Hoover Honey'
+          text='Enjoy the taste and benefits of real honey sold by real people.'
+          textColor='gradient-text-honey'
+          btnColor='gradient-honey'
+          btnText='View Website'
+          btnLink='http://hooverhoney.com'
           external
           orientation={1}
         />
         <Project
           img={Aerials}
-          title="Aerials Gymnastics"
-          text="Join a high performing gymnastics gym that treats its students
-                like family."
-          textColor="gradient-text-aerials"
-          btnColor="gradient-aerials"
-          btnText="View Website"
-          btnLink="http://www.aerialsgymnastics.net"
+          title='Aerials Gymnastics'
+          text='Join a high performing gymnastics gym that treats its students
+                like family.'
+          textColor='gradient-text-aerials'
+          btnColor='gradient-aerials'
+          btnText='View Website'
+          btnLink='http://www.aerialsgymnastics.net'
           external
           orientation={0}
         />
 
-        <Info name="display-f direction-c align-c">
-          <h2 className="margin-b-sm">
+        <Info name='display-f direction-c align-c'>
+          <h2 className='margin-b-sm'>
             Let figure out how I can help you next
           </h2>
-          <p className="margin-b-sm text-md">
-            Contact me today and I'll design a custom solution for your problems
+          <p className='margin-b-sm text-md'>
+            Contact me today and I'll design a custom
+            solution for your problems
           </p>
           <Button
-            text="Hear my ideas"
-            link="/contact"
-            classes="width-v-xmd bg-p-d display-f justify-c"
+            text='Hear my ideas'
+            link='/contact'
+            classes='width-v-xmd bg-p-d display-f justify-c'
           />
         </Info>
 
